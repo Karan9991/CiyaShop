@@ -162,7 +162,7 @@ class LoginVC: UIViewController,GIDSignInDelegate, ASAuthorizationControllerPres
     
     @IBAction func btnFacebookClicked(_ sender: Any) {
         FacebookHelper.shared().getFacebookDetails(vc: self) { (isSuccess,response) in
-            
+            //
             if isSuccess == false {
                 if (response!["error"] as! String) == "1" || (response!["error"] as! String) == "2" || (response!["error"] as! String) == "3" {
                     //do nothing

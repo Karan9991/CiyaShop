@@ -166,7 +166,7 @@ class SignupVC: UIViewController {
             registerUser()
             return
         }
-        
+        //
         //send sms
         let arrCountryCode = self.lblCountryCode.text?.components(separatedBy: " ")
         let strPhoneNumber = String(format: "%@%@", arrCountryCode![arrCountryCode!.count-1] as String,self.txtContactNo.text! as String)
@@ -259,7 +259,7 @@ class SignupVC: UIViewController {
     
     func syncWishlist() {
         self.view.endEditing(true)
-        
+        //
         showLoader(vc: self)
         var params = [AnyHashable : Any]()
         params["user_id"] = getValueFromLocal(key: USERID_KEY)
