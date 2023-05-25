@@ -12,7 +12,7 @@ protocol MCLocalizationProvider: class {
     var languages: [String] { get }
     func string(for key: String, language: String) -> String?
 }
-
+//
 protocol MCLocalizationObserver: class {
     func localize(_ localization: MCLocalization?)
 }
