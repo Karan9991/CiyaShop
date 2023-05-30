@@ -77,7 +77,7 @@ class TabbarVC: BaseViewController,UITabBarControllerDelegate {
     }
     
     // MARK: - APIs Caling
-    
+    //
     func getHomeScrollingData() {
         showLoader()
         var params = [AnyHashable : Any]()
